@@ -1,8 +1,9 @@
 httpx==0.27.2
-langchain==0.3.7
-langchain-community==0.3.7
-langchain-core==0.3.19
-langchain-google-genai==2.0.4
+langchain==0.3.25
+langchain-community==0.3.24
+langchain-core==0.3.63
+langchain-google-genai==2.1.1
 pillow==11.0.0
 python-dotenv==1.0.1
 openai==1.80.0
+langchain-deepseek==0.1.3
