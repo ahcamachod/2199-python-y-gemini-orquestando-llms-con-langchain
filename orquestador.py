@@ -6,6 +6,7 @@ from langchain.globals import set_debug
 from langchain import hub
 from langchain.agents import create_react_agent, Tool
 from herramienta_analisis_imagen import HerramientaAnalisisImagen
+from herramienta_explicar import HerramientaExplicar
 
 set_debug(False)
 
@@ -18,12 +19,20 @@ class AgenteOrquestador:
         
         herramienta_analisis_imagen = HerramientaAnalisisImagen()
 
+        herramienta_explicar = HerramientaExplicar()
+
         self.tools =[
             Tool(
                 name = herramienta_analisis_imagen.name,
                 func = herramienta_analisis_imagen.run,
                 description = herramienta_analisis_imagen.description,
                 return_direct = herramienta_analisis_imagen.return_direct
+            ),
+            Tool(
+                name = herramienta_explicar.name,
+                func = herramienta_explicar.run,
+                description = herramienta_explicar.description,
+                return_direct = herramienta_explicar.return_direct
             )
         ]
 

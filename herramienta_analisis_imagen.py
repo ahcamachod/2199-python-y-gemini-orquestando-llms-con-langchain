@@ -22,7 +22,7 @@ class HerramientaAnalisisImagen(BaseTool):
     def _run(self, accion):
         
         accion = ast.literal_eval(accion)
-        camino_imagen = accion.get("nombre_imagen","")
+        camino_imagen = accion.get("nombre_imagen","") # Si no encuentra imagen, devuelve una string vacía.
 
 
         llm = ChatGoogleGenerativeAI(
@@ -76,7 +76,7 @@ class HerramientaAnalisisImagen(BaseTool):
 
         template_respuesta = PromptTemplate(
             template="""
-            Genera un resumen, utilizando un lenguaje claro y objetivo, enfocado en el público canadiense. 
+            Genera un resumen, utilizando un lenguaje claro y objetivo, enfocado en el público colombiano. 
             La idea es que la comunicación del resultado sea lo más sencilla posible, priorizando los registros
             para consultas posteriores.
 
