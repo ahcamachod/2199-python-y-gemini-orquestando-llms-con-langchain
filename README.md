@@ -43,9 +43,9 @@ Después, instala los paquetes utilizando:
 pip install -r requirements.txt
 ```
 
-## 🔑 Generar API\_KEY y asociarla al archivo .env
+## 🔑 Generar API\_KEYs y asociarlas al archivo .env
 
 ```python
 GEMINI_API_KEY = "TU_API_KEY_AQUÍ"
-DEEPSEEK_API_KEY = "TU_API_KEY_AQUÍ"
+COHERE_API_KEY = "TU_API_KEY_AQUÍ"
 ```
