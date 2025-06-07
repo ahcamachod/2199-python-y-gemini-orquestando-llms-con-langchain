@@ -15,7 +15,6 @@ respuesta = llm.invoke("Cuáles canales de youtube me recomiendas para saber má
 
 print(f"Gemini: ",respuesta.content)
 
-
 #Con Cohere
 
 llm = ChatCohere(cohere_api_key=COHERE_API_KEY)
@@ -27,8 +26,6 @@ print(f"\n\nCohere: ",llm.invoke(respuesta).content)
 imagen = encode_image('datos/ejemplo_grafico.jpg')
 
 pregunta = 'Describe la imagen: '
-
-# Componer el mensaje con un texto y el constructor:
 
 mensaje = HumanMessage(
     content = [
@@ -42,8 +39,6 @@ mensaje = HumanMessage(
         }
     ]
 )
-
-#Garantiza robustez en los diversos LLMs
 
 respuesta = llm.invoke([mensaje])
 
