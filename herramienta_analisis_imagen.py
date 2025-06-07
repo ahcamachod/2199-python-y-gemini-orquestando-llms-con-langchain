@@ -76,7 +76,7 @@ class HerramientaAnalisisImagen(BaseTool):
 
         template_respuesta = PromptTemplate(
             template="""
-            Genera un resumen, utilizando un lenguaje claro y objetivo, enfocado en el público canadiense. 
+            Genera un resumen, utilizando un lenguaje claro y objetivo, enfocado en el público colombiano. 
             La idea es que la comunicación del resultado sea lo más sencilla posible, priorizando los registros
             para consultas posteriores.
 
