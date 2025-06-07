@@ -47,5 +47,5 @@ pip install -r requirements.txt
 
 ```python
 GEMINI_API_KEY = "TU_API_KEY_AQUÍ"
-DEEPSEEK_API_KEY = "TU_API_KEY_AQUÍ"
+COHERE_API_KEY = "TU_API_KEY_AQUÍ"
 ```
